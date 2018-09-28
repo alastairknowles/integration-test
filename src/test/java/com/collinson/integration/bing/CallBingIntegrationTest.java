@@ -2,9 +2,10 @@ package com.collinson.integration.bing;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
-@RunWith(Cucumber.class)
+@RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
     features = "src/test/resources/features/callBing.feature",
     plugin = {"pretty", "json:target/cucumber-reports/Bing.json"},
